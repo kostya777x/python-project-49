@@ -5,9 +5,9 @@ import prompt
 
 
 def progression():
-    len = randint(6, 10)
-    progression_list = [randint(1, 100)]
-    diff = randint(1, 100)
+    len = randint(5, 15)
+    progression_list = [randint(1, 50)]
+    diff = randint(1, 10)
     i = 0
     while i < len:
         progression_list.append(progression_list[i] + diff)
@@ -21,8 +21,8 @@ def progression_number(name):
     while i < 3:
         progression_list = progression()
         char = randint(0, (len(progression_list) - 1))
-        answer = progression_list[char]
-        progression_list[char] = ".."
+        answer = str(progression_list[char])
+        progression_list[char] = '..'
         result = " ".join(map(str, progression_list))
         print(f'Question: {result}')
         answer_enter = prompt.string('Your answer: ')
