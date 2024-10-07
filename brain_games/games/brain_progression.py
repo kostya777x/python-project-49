@@ -5,7 +5,7 @@ import prompt
 
 
 def progression():
-    len = randint(5, 15)
+    len = randint(6, 10)
     progression_list = [randint(1, 100)]
     diff = randint(1, 100)
     i = 0
