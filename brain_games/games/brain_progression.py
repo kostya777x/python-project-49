@@ -21,9 +21,10 @@ def progression_number(name):
     while i < 3:
         progression_list = progression()
         char = randint(0, (len(progression_list) - 1))
-        answer = str(progression_list[char])
-        progression_list[char] = '..'
-        print(f'Question: {progression_list}')
+        answer = progression_list[char]
+        progression_list[char] = ".."
+        result = " ".join(map(str, progression_list))
+        print(f'Question: {result}')
         answer_enter = prompt.string('Your answer: ')
         if answer != answer_enter:
             return (print(f"'{answer_enter}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {name}!)"))
