@@ -27,7 +27,9 @@ def progression_number(name):
         print(f'Question: {result}')
         answer_enter = prompt.string('Your answer: ')
         if answer != answer_enter:
-            return (print(f"'{answer_enter}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {name}!)"))
+            return (print(answer_enter, ' is wrong answer ;(.'
+                          'Correct answer was ', answer,
+                          ".\nLet's try again, ", name, '!)'))
         else:
             print('Correct!')
             i += 1

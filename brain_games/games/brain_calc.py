@@ -22,7 +22,9 @@ def calc_number(name):
         print(f'Question: {number_1} {operator} {number_2}')
         answer_enter = prompt.string('Your answer: ')
         if str(answer) != answer_enter:
-            return (print(f"'{answer_enter}' is wrong answer ;(. Correct answer was '{answer}'.\nLet's try again, {name}!)"))
+            return (print(answer_enter, ' is wrong answer ;(.'
+                          'Correct answer was ', answer,
+                          ".\nLet's try again, ", name, '!)'))
         else:
             print('Correct!')
             i += 1
