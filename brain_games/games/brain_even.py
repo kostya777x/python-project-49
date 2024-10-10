@@ -17,9 +17,9 @@ def even_number(name):
         print(f'Question: {number}')
         answer_enter = prompt.string('Your answer: ')
         if answer != answer_enter:
-            return (print(answer_enter, ' is wrong answer ;(.'
-                          'Correct answer was ', answer,
-                          ".\nLet's try again, ", name, '!)'))
+            return (print("{}".format(answer_enter), 'is wrong answer ;(. '
+                          'Correct answer was', "{}".format(answer + "."),
+                          "\nLet's try again,", "{}".format(name + "!)")))
         else:
             print('Correct!')
             i += 1

@@ -23,9 +23,9 @@ def gcd_number(name):
         answer_enter = prompt.string('Your answer: ')
         answer = str(gcd(number_1, number_2))
         if answer != answer_enter:
-            return (print(answer_enter, ' is wrong answer ;(.'
-                          'Correct answer was ', answer,
-                          ".\nLet's try again, ", name, '!)'))
+            return (print("{}".format(answer_enter), 'is wrong answer ;(. '
+                          'Correct answer was', "{}".format(answer + "."),
+                          "\nLet's try again,", "{}".format(name + "!)")))
         else:
             print('Correct!')
             i += 1
