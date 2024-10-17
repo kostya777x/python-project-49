@@ -11,7 +11,7 @@ https://github.com/kostya777x/python-project-49/actions/runs/11277766590/job/313
 
 #asciinema
 brain-calc
-[![asciicast](https://asciinema.org/a/6TuiEZtgqvWjkt8jmx0o72SiZ.png)](https://asciinema.org/a/6TuiEZtgqvWjkt8jmx0o72SiZ?autoplay=1&speed=1.5)
+[![asciicast](https://asciinema.org/a/6TuiEZtgqvWjkt8jmx0o72SiZ.svg)](https://asciinema.org/a/6TuiEZtgqvWjkt8jmx0o72SiZ)
 brain-even - https://asciinema.org/a/3oNBmCo7kBspCEiHyVj3Zpphn
 brain-gcd -  https://asciinema.org/a/RKVdUAtIr5xIt67pnYXk1L7CX
 brain-progression - https://asciinema.org/a/0hsibpBOggAq7llMdmtztbU5V
