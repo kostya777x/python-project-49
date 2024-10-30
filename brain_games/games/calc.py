@@ -16,7 +16,7 @@ def search_expression_result(operator, number_1, number_2):
 def get_expression_result():
     number_1, number_2 = get_random_number(), get_random_number()
     operator = random.choice(['+', '-', '*',])
-    question = f'{number_1}{operator}{number_2}'
+    question = f'{number_1} {operator} {number_2}'
     answer = str(search_expression_result(operator, number_1, number_2))
     return answer, question
 
