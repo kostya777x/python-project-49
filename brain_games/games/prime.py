@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
-from brain_games import utility
-from brain_games.const import PRINT_YOUR_ANSWER, PRINT_PRIME
-from brain_games.engine import engine
+from brain_games import utils
+from brain_games.consts import PRIME_INSTRUCTION
+from brain_games.engine import run_game
 import prompt
 
 
@@ -19,13 +18,13 @@ def is_prime(number):
 
 
 def get_is_prime():
-    number = utility.get_random()
+    number = utils.get_random_number()
     print(f'Question: {number}')
-    answer_enter = prompt.string(PRINT_YOUR_ANSWER)
+    answer_enter = prompt.string('Your answer: ')
     answer = is_prime(number)
     return answer, answer_enter
 
 
 def run_is_prime():
-    engine(get_is_prime, PRINT_PRIME)
+    run_game(get_is_prime, PRIME_INSTRUCTION)
     return

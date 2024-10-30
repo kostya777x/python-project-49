@@ -1,19 +1,18 @@
-#!/usr/bin/env python3
-from brain_games import cli
-from brain_games.const import ROUND
+import prompt
+from brain_games.consts import ROUND
 
 
-def engine(get_answer_and_answer_enter, instruction):
-    name = cli.welcome_user()
+def run_game(get_answer_and_answer_enter, instruction):
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
     print(instruction)
-    i = 0
-    while i < ROUND:
+    for _ in range(ROUND):
         answer, answer_enter = get_answer_and_answer_enter()
         if answer != answer_enter:
-            return (print("{}".format(answer_enter), 'is wrong answer ;(. '
-                          'Correct answer was', "{}".format(answer + "."),
-                          "\nLet's try again,", "{}".format(name + "!)")))
+            return (print(f"{answer_enter} is wrong answer ;(. "
+                          f"Correct answer was {answer}."
+                          f"\nLet's try again, {name}!)"))
         else:
             print('Correct!')
-            i += 1
     return (print(f'Congratulations, {name}!'))

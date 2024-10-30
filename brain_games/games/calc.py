@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
-from brain_games import utility
-from brain_games.const import PRINT_YOUR_ANSWER, PRINT_CALC, OPERATOR_LIST
-from brain_games.engine import engine
+from brain_games import utils
+from brain_games.consts import CALC_INSTRUCTION, OPERATOR_LIST
+from brain_games.engine import run_game
 import prompt
 import random
 
@@ -13,14 +12,14 @@ def search_expression_result(number_1, number_2, operator):
 
 
 def get_expression_result():
-    number_1, number_2 = utility.get_random(), utility.get_random()
+    number_1, number_2 = utils.get_random_number(), utils.get_random_number()
     operator = random.choice(OPERATOR_LIST)
     print(f'Question: {number_1} {operator} {number_2}')
-    answer_enter = prompt.string(PRINT_YOUR_ANSWER)
+    answer_enter = prompt.string('Your answer: ')
     answer = str(search_expression_result(number_1, number_2, operator))
     return answer, answer_enter
 
 
 def run_get_expression_result():
-    engine(get_expression_result, PRINT_CALC)
+    run_game(get_expression_result, CALC_INSTRUCTION)
     return
