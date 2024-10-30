@@ -1,6 +1,6 @@
 from brain_games import utils
 from random import randint
-from brain_games.consts import PRINT_PROGRESSION, MIN_PROGRESSION_LEN, \
+from brain_games.consts import PROGRESSION_INSTRUCTION, MIN_PROGRESSION_LEN, \
     MAX_PORGRESSION_LEN
 from brain_games.engine import run_game
 import prompt
@@ -28,5 +28,5 @@ def get_progression_skip_number():
 
 
 def run_get_progression_number():
-    run_game(get_progression_skip_number, PRINT_PROGRESSION)
+    run_game(get_progression_skip_number, PROGRESSION_INSTRUCTION)
     return
