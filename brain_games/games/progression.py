@@ -1,32 +1,29 @@
-from brain_games import utils
+from brain_games.utils import get_random_number
 from random import randint
 from brain_games.consts import PROGRESSION_INSTRUCTION, MIN_PROGRESSION_LEN, \
     MAX_PORGRESSION_LEN
 from brain_games.engine import run_game
-import prompt
 
 
 def get_progression_with_skip():
-    start_progression = utils.get_random_number()
-    diff_progtression = utils.get_random_number()
+    start_progression, diff_progtression = get_random_number(), \
+        get_random_number()
     len_progression = randint(MIN_PROGRESSION_LEN, MAX_PORGRESSION_LEN)
     char = randint(0, (len_progression - 1))
-    progression_list = []
-    for i in range(len_progression):
-        progression_list.append(start_progression + diff_progtression * i)
-    answer = str(progression_list[char])
-    progression_list[char] = '..'
-    progression_list_with_skip = " ".join(map(str, progression_list))
-    return progression_list_with_skip, answer
+    progression_list_with_skip = " ".join([
+        '..' if i == char
+        else str(start_progression + diff_progtression * i)
+        for i in range(len_progression)
+    ])
+    answer = start_progression + diff_progtression * char
+    return progression_list_with_skip, str(answer)
 
 
 def get_progression_skip_number():
-    progression_list_with_skip, answer = get_progression_with_skip()
-    print(f'Question: {progression_list_with_skip}')
-    answer_enter = prompt.string('Your answer: ')
-    return answer, answer_enter
+    question, answer = get_progression_with_skip()
+    return answer, question
 
 
-def run_get_progression_number():
+def run_progression():
     run_game(get_progression_skip_number, PROGRESSION_INSTRUCTION)
     return

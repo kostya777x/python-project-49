@@ -9,4 +9,3 @@ MAX_PORGRESSION_LEN = 10
 GCD_INSTRUCTION = 'Find the greatest common divisor of given numbers.'
 EVEN_INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 CALC_INSTRUCTION = 'What is the result of the expression?'
-OPERATOR_LIST = ('+', '-', '*')

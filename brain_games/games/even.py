@@ -1,7 +1,6 @@
-from brain_games import utils
+from brain_games.utils import get_random_number
 from brain_games.consts import EVEN_INSTRUCTION
 from brain_games.engine import run_game
-import prompt
 
 
 def is_even(number):
@@ -9,15 +8,10 @@ def is_even(number):
 
 
 def get_even():
-    number = utils.get_random_number()
-    if is_even(number) is True:
-        answer = 'yes'
-    else:
-        answer = 'no'
-    print(f'Question: {number}')
-    answer_enter = prompt.string('Your answer: ')
-    return answer, answer_enter
+    question = get_random_number()
+    answer = 'yes' if is_even(question) else 'no'
+    return answer, question
 
 
-def run_get_even():
+def run_even_game():
     run_game(get_even, EVEN_INSTRUCTION)

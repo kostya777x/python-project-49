@@ -1,24 +1,20 @@
-from brain_games import utils
+from brain_games.utils import get_random_number
 import math
 from brain_games.consts import GCD_INSTRUCTION
 from brain_games.engine import run_game
-import prompt
 
 
 def search_gcd(number_1, number_2):
-    gcd = math.gcd(number_1, number_2)
-    return gcd
+    return math.gcd(number_1, number_2)
 
 
 def get_gcd():
-    number_1 = utils.get_random_number()
-    number_2 = utils.get_random_number()
-    print(f'Question: {number_1} {number_2}')
-    answer_enter = prompt.string('Your answer: ')
+    number_1, number_2 = get_random_number(), get_random_number()
+    question = f'Question: {number_1} {number_2}'
     answer = str(search_gcd(number_1, number_2))
-    return answer, answer_enter
+    return answer, question
 
 
-def run_get_gcd():
+def run_gcd():
     run_game(get_gcd, GCD_INSTRUCTION)
     return
