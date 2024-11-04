@@ -5,25 +5,28 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/11995505f5580a6d82c0/maintainability)](https://codeclimate.com/github/kostya777x/python-project-49/maintainability)
 
 # asciinema
-##### 1) brain-calc
- [![asciicast](https://asciinema.org/a/pY5fKhasw0fApmPtSZGhBBz84.svg)](https://asciinema.org/a/pY5fKhasw0fApmPtSZGhBBz84)
+##### 1) install
+[![asciicast](https://asciinema.org/a/LnAL9KrhiaIoTkEI61KKAmfBv.svg)](https://asciinema.org/a/LnAL9KrhiaIoTkEI61KKAmfBv)
+##### 2) brain-calc
+[![asciicast](https://asciinema.org/a/w9lP04zGWFeJHSCdPcTfn5Tt7.svg)](https://asciinema.org/a/w9lP04zGWFeJHSCdPcTfn5Tt7)
+##### 3) brain-even
+[![asciicast](https://asciinema.org/a/MDBz7s8nRN9i3SvGztw8D5WMf.svg)](https://asciinema.org/a/MDBz7s8nRN9i3SvGztw8D5WMf)
+##### 4) brain-gcd
+[![asciicast](https://asciinema.org/a/O4TMiUVqrhxdaaB7rYgUIHh8q.svg)](https://asciinema.org/a/O4TMiUVqrhxdaaB7rYgUIHh8q)
+##### 5) brain-progression
+[![asciicast](https://asciinema.org/a/ln0uwKOUTubUak9Lr8IIu7H70.svg)](https://asciinema.org/a/ln0uwKOUTubUak9Lr8IIu7H70)
+##### 6) brain-prime
+[![asciicast](https://asciinema.org/a/T3a9WjlGFsFFjXknFWO8VNzGC.svg)](https://asciinema.org/a/T3a9WjlGFsFFjXknFWO8VNzGC)
 
-##### 2 )brain-even
-[![asciicast](https://asciinema.org/a/CMQfeIGrBIhNNKYjpPhG43ruk.svg)](https://asciinema.org/a/CMQfeIGrBIhNNKYjpPhG43ruk)
-##### 3) brain-gcd
-[![asciicast](https://asciinema.org/a/8difnY5J1cR7TuSHK4a4go2rn.svg)](https://asciinema.org/a/8difnY5J1cR7TuSHK4a4go2rn)
-##### 4) brain-progression
-[![asciicast](https://asciinema.org/a/n47DGYJuZOD38QBfABSDCCpiE.svg)](https://asciinema.org/a/n47DGYJuZOD38QBfABSDCCpiE)
-##### 5) brain-prime
-[![asciicast](https://asciinema.org/a/B3YQqDswe7gE9QyimNnDgWVE9.svg)](https://asciinema.org/a/B3YQqDswe7gE9QyimNnDgWVE9)
-##### 6) install
-[![asciicast](https://asciinema.org/a/lUyJOz8qoupg6IHsL03sFswiY.svg)](https://asciinema.org/a/lUyJOz8qoupg6IHsL03sFswiY)
+#### Описание
+
+«Игры разума» — набор из пяти игр. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру.
 
 #### Мы использовали
-1) git
-2) poetry
-3) flake8
-4) prompt
+1) git 2.43.0
+2) poetry 1.8.3
+3) flake8 7.1.1
+4) prompt 0.4.1
 5) пакеты math, random
 - и еще многое другое)
 

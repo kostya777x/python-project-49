@@ -6,8 +6,8 @@ from brain_games.engine import run_game
 
 
 def get_progression_with_skip():
-    start_progression, diff_progtression = get_random_number(), \
-        get_random_number()
+    start_progression, diff_progtression = (get_random_number(),
+                                            get_random_number())
     len_progression = randint(MIN_PROGRESSION_LEN, MAX_PORGRESSION_LEN)
     char = randint(0, (len_progression - 1))
     progression_list_with_skip = " ".join([

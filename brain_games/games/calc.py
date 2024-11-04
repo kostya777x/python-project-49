@@ -4,20 +4,19 @@ from brain_games.engine import run_game
 import random
 
 
-def search_expression_result(operator, number_1, number_2):
-    if operator == '+':
-        return number_1 + number_2
-    elif operator == '-':
-        return number_1 - number_2
-    elif operator == '*':
-        return number_1 * number_2
+def search_expression_result(number_1, number_2):
+    return random.choice([
+        ('+', number_1 + number_2),
+        ('-', number_1 - number_2),
+        ('*', number_1 * number_2)
+    ])
 
 
 def get_expression_result():
     number_1, number_2 = get_random_number(), get_random_number()
-    operator = random.choice(['+', '-', '*',])
+    operator, expression_result = search_expression_result(number_1, number_2)
     question = f'{number_1} {operator} {number_2}'
-    answer = str(search_expression_result(operator, number_1, number_2))
+    answer = str(expression_result)
     return answer, question
 
 

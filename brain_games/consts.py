@@ -1,5 +1,3 @@
-FIRST_RANDOM_NUMBER = 6
-SECOND_RANDOM_NUMBER = 30
 ROUND = 3
 PRIME_INSTRUCTION = 'Answer "yes" if given number is prime. \
 Otherwise answer "no".'
