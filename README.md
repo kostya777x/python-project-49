@@ -1,3 +1,27 @@
+#### Description
+
+"Mind Games" is a set of five games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game.
+
+#### We used
+1) git 2.43.0
+2) poetry 1.8.3
+3) flake8 7.1.1
+4) prompt 0.4.1
+5) math, random packages
+- and much more)
+
+# install
+1) make build
+2) make publish
+3) make package-install
+
+# games
+1) brain-calc - Game: "Calculator"
+2) brain-even - Game: "Evenness check"
+3) brain-gcd - Game "GCD"
+4) brain-progression - Game "Arithmetic progression"
+5) brain-prime - Game "Is a number prime?"
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/kostya777x/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kostya777x/python-project-49/actions)
 
@@ -18,27 +42,3 @@
 ##### 6) brain-prime
 [![asciicast](https://asciinema.org/a/T3a9WjlGFsFFjXknFWO8VNzGC.svg)](https://asciinema.org/a/T3a9WjlGFsFFjXknFWO8VNzGC)
 
-#### Описание
-
-«Игры разума» — набор из пяти игр. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру.
-
-#### Мы использовали
-1) git 2.43.0
-2) poetry 1.8.3
-3) flake8 7.1.1
-4) prompt 0.4.1
-5) пакеты math, random
-- и еще многое другое)
-
-
-# install
-1) make build
-2) make publish
-3) make package-install
-
-# games
-1) brain-calc - Игра: «Калькулятор»
-2) brain-even - Игра: «Проверка на чётность»
-3) brain-gcd - Игра «НОД»
-4) brain-progression - Игра «Арифметическая прогрессия»
-5) brain-prime - Игра «Простое ли число?»
