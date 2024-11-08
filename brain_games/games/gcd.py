@@ -6,7 +6,7 @@ from brain_games.engine import run_game
 
 def get_gcd():
     number_1, number_2 = get_random_number(), get_random_number()
-    question = f'Question: {number_1} {number_2}'
+    question = f'{number_1} {number_2}'
     answer = str(math.gcd(number_1, number_2))
     return answer, question
 
